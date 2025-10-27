@@ -35,13 +35,13 @@ in
 
 rustPlatform.buildRustPackage rec {
   pname = "gitbutler";
-  version = "0.14.19";
+  version = "0.16.10";
 
   src = fetchFromGitHub {
     owner = "gitbutlerapp";
     repo = "gitbutler";
     tag = "release/${version}";
-    hash = "sha256-NopuZbgF2jdwuf/p/JzubS0IM5xBnlkh9Tj234auBnE=";
+    hash = "sha256-1v7j60csq87cm3dhbfrcg36wr9fqga7ymvsp9jxgp6bv0bv2kmgc=";
   };
 
   # Let Tauri know what version we're building
